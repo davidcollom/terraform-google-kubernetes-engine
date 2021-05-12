@@ -218,7 +218,7 @@ resource "google_container_cluster" "primary" {
   }
 
   dynamic "node_pool" {
-    for_each = var.node_pool
+    for_each = var.node_pools
 
     name = each.key
 
