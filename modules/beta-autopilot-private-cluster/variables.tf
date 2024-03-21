@@ -275,6 +275,13 @@ variable "enable_private_endpoint" {
   default     = false
 }
 
+variable "private_endpoint_subnetwork" {
+  type        = string
+  description = "(Beta) Subnetwork in cluster's network where master's endpoint will be provisioned."
+  default     = ""
+}
+
+
 variable "enable_private_nodes" {
   type        = bool
   description = "(Beta) Whether nodes have internal IP addresses only"
